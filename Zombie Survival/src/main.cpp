@@ -5,16 +5,16 @@
 int main()
 {
 	int health;
-	Character hero;													//Creates Hero
-	Character zombie;
+	Character hero;			//Creates Hero
+	Character zombie;		//Created zombie
 	std::cout << "Enter your health: ";
 	std::cin >> health;
 
 	hero.setHealth(health);
-	zombie.setHealth(9);											//initializes Zombie's Health
+	zombie.setHealth(9);	//initializes Zombie's Health
 	zombie.setAmmo(0);
 	hero.setAmmo(10);
-	if (health > 0) {												//initializes hero's ammo to 10
+	if (health > 0) {		//initializes hero's ammo to 10
 		std::cout << "Health: " << hero.getHealth() << std::endl;
 	}
 	std::cout << "Ammo: "   << hero.getAmmo()   << std::endl;
@@ -45,8 +45,6 @@ int main()
 			std::cout << "The trash collector took the zombie away :( \n";
 		}
 
-	
-	//std::cout << "Hello World!\n";
-	std::cin.get();														//Pauses Game 
+	std::cin.get();		//Pauses Game 
 	system("Pause");
 }
